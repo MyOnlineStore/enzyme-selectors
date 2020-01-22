@@ -1,20 +1,21 @@
 const Enzyme = require("enzyme");
 
-function configure(config = {}) {
+function addSelectors() {
   function findByTestId(id) {
-    const selector = config.selector || "data-testid";
+    return this.find(`[data-testid="${id}"]`).hostNodes();
+  }
 
-    if (config.hostNodes === false) {
-      return this.find(`[${selector}="${id}"]`);
-    }
-
-    return this.find(`[${selector}="${id}"]`).hostNodes();
+  function findByAriaLabel(label) {
+    return this.find(`[aria-label="${label}"]`).hostNodes();
   }
 
   Enzyme.ReactWrapper.prototype.findByTestId = findByTestId;
+  Enzyme.ReactWrapper.prototype.findByAriaLabel = findByAriaLabel;
+
   Enzyme.ShallowWrapper.prototype.findByTestId = findByTestId;
+  Enzyme.ShallowWrapper.prototype.findByAriaLabel = findByAriaLabel;
 }
 
 module.exports = {
-  configure
+  addSelectors
 };
