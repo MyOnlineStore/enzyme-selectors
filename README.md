@@ -26,9 +26,10 @@ After installation, you should configure the selectors. If you already have enzy
 +  configure();
 ```
 
-That's it! This will add the following selectors to enzyme:
+That's it, You are now ready to start using the selectors in your tests 🎉.
 
 ## Selectors
+After installing and configuring the following selectors will be added to enzyme:
 
 ### `findByTestId(id)`
 
