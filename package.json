@@ -1,9 +1,13 @@
 {
   "name": "enzyme-find-by-testid",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "author": "Carlo Palinckx <carlo@mijnwebwinkel.nl>",
   "license": "MIT",
+  "files": [
+    "src/index.js"
+  ],
+  "types": "src/index.d.ts",
   "dependencies": {},
   "peerDependencies": {
     "enzyme": ">=2.0.0"
