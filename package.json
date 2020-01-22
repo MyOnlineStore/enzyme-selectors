@@ -1,6 +1,6 @@
 {
   "name": "enzyme-find-by-testid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "author": "Carlo Palinckx <carlo@mijnwebwinkel.nl>",
   "license": "MIT",
