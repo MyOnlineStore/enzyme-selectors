@@ -13,9 +13,7 @@ Or if using npm instead of yarn:
 npm i -D enzyme-selectors
 ```
 
-<br />
 After installation, you should configure the selectors. If you already have enzyme configured this will be easy (if you haven't configured enzyme yet, follow their [installation guide](https://airbnb.io/enzyme/docs/installation/) before continuing). In the setup file where you configure Enzyme you can add the following lines:
-
 ```diff
    const Enzyme = require("enzyme");
    const Adapter = require("enzyme-adapter-react-16");
