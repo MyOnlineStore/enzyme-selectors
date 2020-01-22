@@ -1,5 +1,5 @@
 {
-  "name": "enzyme-find-by-testid",
+  "name": "enzyme-selectors",
   "version": "0.0.2",
   "main": "index.js",
   "author": "Carlo Palinckx <carlo@mijnwebwinkel.nl>",
