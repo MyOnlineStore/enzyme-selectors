@@ -1,6 +1,6 @@
 # Enzyme Selectors 
 
-Other testing libraries like [react-testing-library](https://github.com/testing-library/react-testing-library) have popularized testing react-components by locating them by specific html-attributes that enforce best pactices for accessability. This little module brings the convenience of those selectors to enzyme ✨.
+Other testing libraries like [react-testing-library](https://github.com/testing-library/react-testing-library) have popularized testing react-components by locating them by specific html-attributes that enforce best pactices for accessibility. This module brings the convenience of those selectors to enzyme ✨.
 
 ## Setup
 
@@ -26,10 +26,19 @@ After installation, you should configure the selectors. If you already have enzy
 +  configure();
 ```
 
-This will add the following selectors to enzyme:
+That's it! This will add the following selectors to enzyme:
 
+## Selectors
 
 ### `findByTestId(id)`
 
+This selector finds all html elements that contain a `data-testid` which matches the passed in `id`.
 
+```jsx
+// in component file
+const Foo = props => <div data-testid="foo" />
 
+// in test file
+const component = mount(<Foo />);
+component.findByTestId('foo'); // <div data-testid="foo" />
+```
