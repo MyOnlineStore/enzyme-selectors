@@ -29,6 +29,8 @@ After installation, you should configure the selectors. If you already have enzy
 That's it, You are now ready to start using the selectors in your tests 🎉.
 
 ## Selectors
+> All selectors apply to `mount` as well as `shallow`
+
 After installing and configuring the following selectors will be added to enzyme:
 
 ### `findByTestId(id)`
