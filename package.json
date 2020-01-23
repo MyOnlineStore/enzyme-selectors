@@ -1,6 +1,6 @@
 {
   "name": "enzyme-selectors",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "src/index.js",
   "author": "Carlo Palinckx <carlo@mijnwebwinkel.nl>",
   "license": "MIT",
