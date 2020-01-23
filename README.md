@@ -38,28 +38,230 @@ That's it, You are now ready to start using the selectors in your tests 🎉.
 
 After installing and configuring the following selectors will be added to enzyme:
 
-### `findByTestId(id)`
+### `findByTestId`
 
-This selector finds all html elements that contain a `data-testid` which matches the passed in `id`.
+Find components by their `data-testid` value
+
+Params:
+
+`id`: id to match
 
 ```jsx
-// in component file
-const Foo = props => <div data-testid="foo" />;
 
-// in test file
-const component = mount(<Foo />);
-component.findByTestId("foo"); // <div data-testid="foo" />
+const component = mount(
+<div>
+<div data-testid="foo">foo</div>
+<div>
+);
+
+component.findByTestId('foo'); // returns <div data-testid="foo">foo</div>
 ```
 
-### `findByAriaLabel(label)`
+### `findByAriaLabel`
 
-This selector finds all html elements that contain a `aria-label` which matches the passed in `label`.
+Find components by their `aria-label` value
+
+Params:
+
+`label`: label to match
 
 ```jsx
-// in component file
-const Foo = props => <button aria-label="Close">X</button>;
 
-// in test file
-const component = mount(<Foo />);
-component.findByAriaLabel("Close"); // <button aria-label="Close">X</button>
+const component = mount(
+<div>
+<button aria-label="Close">&times;</button>
+<div>
+);
+
+component.findByAriaLabel('Close'); // returns <button aria-label="Close">&times;</button>
+```
+
+### `findByPlaceholderText`
+
+Find components by their `placeholder` value
+
+Params:
+
+`text`: text to match
+
+```jsx
+
+const component = mount(
+<div>
+<input type="text" placeholder="Name" />
+<div>
+);
+
+component.findByPlaceholderText('Name'); // returns <input type="text" placeholder="Name" />
+```
+
+### `findByAltText`
+
+Find components by their `alt` value
+
+Params:
+
+`text`: text to match
+
+```jsx
+
+const component = mount(
+<div>
+<img alt="foo" />
+<div>
+);
+
+component.findByAltText('foo'); // returns <img alt="foo" />
+```
+
+### `findByTitle`
+
+Find components by their `title` value
+
+Params:
+
+`title`: title to match
+
+```jsx
+
+const component = mount(
+<div>
+<a href="https://..." title="foo">Go</a>
+<div>
+);
+
+component.findByTitle('foo'); // returns <a href="https://..." title="foo">Go</a>
+```
+
+### `findByRole`
+
+Find components by their `role` value
+
+Params:
+
+`role`: role to match
+
+```jsx
+
+const component = mount(
+<div>
+<button role="Close">&times;</button>
+<div>
+);
+
+component.findByRole('Close'); // returns <button role="Close">&times;</button>
+```
+
+### `findByTestId`
+
+Find components by their `data-testid` value
+
+Params:
+
+`id`: id to match
+
+```jsx
+
+const component = mount(
+<div>
+<div data-testid="foo">foo</div>
+<div>
+);
+
+component.findByTestId('foo'); // returns <div data-testid="foo">foo</div>
+```
+
+### `findByAriaLabel`
+
+Find components by their `aria-label` value
+
+Params:
+
+`label`: label to match
+
+```jsx
+
+const component = mount(
+<div>
+<button aria-label="Close">&times;</button>
+<div>
+);
+
+component.findByAriaLabel('Close'); // returns <button aria-label="Close">&times;</button>
+```
+
+### `findByPlaceholderText`
+
+Find components by their `placeholder` value
+
+Params:
+
+`text`: text to match
+
+```jsx
+
+const component = mount(
+<div>
+<input type="text" placeholder="Name" />
+<div>
+);
+
+component.findByPlaceholderText('Name'); // returns <input type="text" placeholder="Name" />
+```
+
+### `findByAltText`
+
+Find components by their `alt` value
+
+Params:
+
+`text`: text to match
+
+```jsx
+
+const component = mount(
+<div>
+<img alt="foo" />
+<div>
+);
+
+component.findByAltText('foo'); // returns <img alt="foo" />
+```
+
+### `findByTitle`
+
+Find components by their `title` value
+
+Params:
+
+`title`: title to match
+
+```jsx
+
+const component = mount(
+<div>
+<a href="https://..." title="foo">Go</a>
+<div>
+);
+
+component.findByTitle('foo'); // returns <a href="https://..." title="foo">Go</a>
+```
+
+### `findByRole`
+
+Find components by their `role` value
+
+Params:
+
+`role`: role to match
+
+```jsx
+
+const component = mount(
+<div>
+<button role="Close">&times;</button>
+<div>
+);
+
+component.findByRole('Close'); // returns <button role="Close">&times;</button>
 ```

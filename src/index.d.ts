@@ -8,6 +8,7 @@ declare module "enzyme" {
   interface ReactWrapper {
     /**
      * Find components by their `data-testid` value
+     * @name findByTestId
      * @param id id to match
      * @example
      * const component = mount(
@@ -21,7 +22,8 @@ declare module "enzyme" {
     findByTestId<P, S, C>(id: string): ReactWrapper<P, S, C>;
 
     /**
-     * Find components by their `data-testid` value
+     * Find components by their `aria-label` value
+     * @name findByAriaLabel
      * @param label label to match
      * @example
      * const component = mount(
@@ -36,6 +38,7 @@ declare module "enzyme" {
 
     /**
      * Find components by their `placeholder` value
+     * @name findByPlaceholderText
      * @param text text to match
      * @example
      * const component = mount(
@@ -50,6 +53,7 @@ declare module "enzyme" {
 
     /**
      * Find components by their `alt` value
+     * @name findByAltText
      * @param text text to match
      * @example
      * const component = mount(
@@ -64,6 +68,7 @@ declare module "enzyme" {
 
     /**
      * Find components by their `title` value
+     * @name findByTitle
      * @param title title to match
      * @example
      * const component = mount(
@@ -78,6 +83,7 @@ declare module "enzyme" {
 
     /**
      * Find components by their `role` value
+     * @name findByRole
      * @param role role to match
      * @example
      * const component = mount(
@@ -94,6 +100,7 @@ declare module "enzyme" {
   interface ShallowWrapper {
     /**
      * Find components by their `data-testid` value
+     * @name findByTestId
      * @param id id to match
      * @example
      * const component = mount(
@@ -107,7 +114,8 @@ declare module "enzyme" {
     findByTestId<P, S, C>(id: string): ShallowWrapper<P, S, C>;
 
     /**
-     * Find components by their `data-testid` value
+     * Find components by their `aria-label` value
+     * @name findByAriaLabel
      * @param label label to match
      * @example
      * const component = mount(
@@ -122,6 +130,7 @@ declare module "enzyme" {
 
     /**
      * Find components by their `placeholder` value
+     * @name findByPlaceholderText
      * @param text text to match
      * @example
      * const component = mount(
@@ -136,6 +145,7 @@ declare module "enzyme" {
 
     /**
      * Find components by their `alt` value
+     * @name findByAltText
      * @param text text to match
      * @example
      * const component = mount(
@@ -150,6 +160,7 @@ declare module "enzyme" {
 
     /**
      * Find components by their `title` value
+     * @name findByTitle
      * @param title title to match
      * @example
      * const component = mount(
@@ -164,6 +175,7 @@ declare module "enzyme" {
 
     /**
      * Find components by their `role` value
+     * @name findByRole
      * @param role role to match
      * @example
      * const component = mount(
