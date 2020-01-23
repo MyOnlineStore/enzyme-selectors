@@ -24,5 +24,12 @@ describe("selectors", () => {
 
       expect(component.findByAriaLabel("foo").length).toBe(1);
     });
+
+    it("should find a component by it's role", () => {
+      addSelectors();
+      const component = render(<button role="foo" />);
+
+      expect(component.findByRole("foo").length).toBe(1);
+    });
   });
 });
