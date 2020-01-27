@@ -34,13 +34,13 @@ After installation, you should configure the selectors. If you already have enzy
 
 This module also includes it's own types, but since the original enzyme types are modified, you have to let typescript know how to add these types.
 
-You can do this by putting the following line:
+You can do this by by either putting the following line in a test file:
 
 ```diff
 + import 'enzyme-selectors';
 ```
 
-In either your test file, or:
+or by putting:
 ```diff
 + /// <reference types="enzyme-selectors" />
 ```
