@@ -40,7 +40,11 @@ You can do this by putting the following line:
 + import 'enzyme-selectors';
 ```
 
-In either your test file, or in some [declaration file](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html) that you already use.
+In either your test file, or:
+```diff
++ /// <reference types="enzyme-selectors" />
+```
+in a global [declaration file](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html) that you already use.
 
 That's it, You are now ready to start using the selectors in your tests 🎉.
 
