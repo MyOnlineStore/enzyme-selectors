@@ -15,10 +15,10 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *   <div data-testid="foo">foo</div>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByTestId('foo'); // returns <div data-testid="foo">foo</div>
+     * component.findByTestId('foo');
      */
     findByTestId<P, S, C>(id: string): ReactWrapper<P, S, C>;
 
@@ -30,10 +30,10 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *   <button aria-label="Close">&times;</button>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByAriaLabel('Close'); // returns <button aria-label="Close">&times;</button>
+     * component.findByAriaLabel('Close');
      */
     findByAriaLabel<P, S, C>(label: string): ReactWrapper<P, S, C>;
 
@@ -45,10 +45,10 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *   <input type="text" placeholder="Name" />
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByPlaceholderText('Name'); // returns <input type="text" placeholder="Name" />
+     * component.findByPlaceholderText('Name');
      */
     findByPlaceholderText<P, S, C>(text: string): ReactWrapper<P, S, C>;
 
@@ -60,10 +60,10 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *    <img alt="foo" />
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByAltText('foo'); // returns <img alt="foo" />
+     * component.findByAltText('foo');
      */
     findByAltText<P, S, C>(text: string): ReactWrapper<P, S, C>;
 
@@ -75,10 +75,10 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *    <a href="https://..." title="foo">Go</a>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByTitle('foo'); // returns <a href="https://..." title="foo">Go</a>
+     * component.findByTitle('foo');
      */
     findByTitle<P, S, C>(title: string): ReactWrapper<P, S, C>;
 
@@ -90,10 +90,10 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *      <button role="Close">&times;</button>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByRole('Close'); // returns <button role="Close">&times;</button>
+     * component.findByRole('Close');
      */
     findByRole<P, S, C>(role: string): ReactWrapper<P, S, C>;
 
@@ -163,11 +163,12 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *   <div data-testid="foo">foo</div>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByTestId('foo'); // returns <div data-testid="foo">foo</div>
+     * component.findByTestId('foo');
      */
+
     findByTestId<P, S, C>(id: string): ShallowWrapper<P, S, C>;
 
     /**
@@ -178,10 +179,10 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *   <button aria-label="Close">&times;</button>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByAriaLabel('Close'); // returns <button aria-label="Close">&times;</button>
+     * component.findByAriaLabel('Close');
      */
     findByAriaLabel<P, S, C>(label: string): ShallowWrapper<P, S, C>;
 
@@ -193,10 +194,10 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *   <input type="text" placeholder="Name" />
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByPlaceholderText('Name'); // returns <input type="text" placeholder="Name" />
+     * component.findByPlaceholderText('Name');
      */
     findByPlaceholderText<P, S, C>(text: string): ShallowWrapper<P, S, C>;
 
@@ -208,10 +209,10 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *    <img alt="foo" />
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByAltText('foo'); // returns <img alt="foo" />
+     * component.findByAltText('foo');
      */
     findByAltText<P, S, C>(text: string): ShallowWrapper<P, S, C>;
 
@@ -223,7 +224,7 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *    <a href="https://..." title="foo">Go</a>
-     *  <div>
+     *  </div>
      * );
      *
      * component.findByTitle('foo'); // returns <a href="https://..." title="foo">Go</a>
@@ -238,7 +239,7 @@ declare module "enzyme" {
      * const component = mount(
      *  <div>
      *      <button role="Close">&times;</button>
-     *  <div>
+     *  </div>
      * );
      *
      * component.findByRole('Close'); // returns <button role="Close">&times;</button>
