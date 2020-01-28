@@ -1,6 +1,7 @@
 import * as enzyme from "enzyme";
 
 type AddSelectors = () => void;
+type DebugBy = (query: string) => string;
 
 declare const addSelectors: AddSelectors;
 
@@ -9,7 +10,7 @@ declare module "enzyme" {
     /**
      * Find components by their `data-testid` value
      * @name findByTestId
-     * @param id id to match
+     * @param {string} id id to match
      * @example
      * const component = mount(
      *  <div>
@@ -24,7 +25,7 @@ declare module "enzyme" {
     /**
      * Find components by their `aria-label` value
      * @name findByAriaLabel
-     * @param label label to match
+     * @param {string} label label to match
      * @example
      * const component = mount(
      *  <div>
@@ -39,7 +40,7 @@ declare module "enzyme" {
     /**
      * Find components by their `placeholder` value
      * @name findByPlaceholderText
-     * @param text text to match
+     * @param {string} text text to match
      * @example
      * const component = mount(
      *  <div>
@@ -54,7 +55,7 @@ declare module "enzyme" {
     /**
      * Find components by their `alt` value
      * @name findByAltText
-     * @param text text to match
+     * @param {string} text text to match
      * @example
      * const component = mount(
      *  <div>
@@ -69,7 +70,7 @@ declare module "enzyme" {
     /**
      * Find components by their `title` value
      * @name findByTitle
-     * @param title title to match
+     * @param {string} title title to match
      * @example
      * const component = mount(
      *  <div>
@@ -84,7 +85,7 @@ declare module "enzyme" {
     /**
      * Find components by their `role` value
      * @name findByRole
-     * @param role role to match
+     * @param {string} role role to match
      * @example
      * const component = mount(
      *  <div>
@@ -95,13 +96,69 @@ declare module "enzyme" {
      * component.findByRole('Close'); // returns <button role="Close">&times;</button>
      */
     findByRole<P, S, C>(role: string): ReactWrapper<P, S, C>;
+
+    /**
+     * Debug components with an `alt` text
+     * @name debugByAltText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByAltText: DebugBy;
+
+    /**
+     * Debug components with an `alt` text
+     * @name debugByAltText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByAriaLabel: DebugBy;
+
+    /**
+     * Debug components by attribute (values)
+     * @name debugByAttribute
+     * @param {string} attribute
+     * @param {string} value
+     */
+    debugByAttribute: DebugBy;
+
+    /**
+     * Debug components with a `placeholder`
+     * @name debugByPlaceholderText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByPlaceholderText: DebugBy;
+
+    /**
+     * Debug components with a `role` attribute
+     * @name debugByRole
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByRole: DebugBy;
+
+    /**
+     * Debug components with a `data-testid` attribute
+     * @name debugByTestId
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByTestId: DebugBy;
+
+    /**
+     * Debug components with a `title` attribute
+     * @name debugByTitle
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByTitle: DebugBy;
   }
 
   interface ShallowWrapper {
     /**
      * Find components by their `data-testid` value
      * @name findByTestId
-     * @param id id to match
+     * @param {string} id id to match
      * @example
      * const component = mount(
      *  <div>
@@ -116,7 +173,7 @@ declare module "enzyme" {
     /**
      * Find components by their `aria-label` value
      * @name findByAriaLabel
-     * @param label label to match
+     * @param {string} label label to match
      * @example
      * const component = mount(
      *  <div>
@@ -131,7 +188,7 @@ declare module "enzyme" {
     /**
      * Find components by their `placeholder` value
      * @name findByPlaceholderText
-     * @param text text to match
+     * @param {string} text text to match
      * @example
      * const component = mount(
      *  <div>
@@ -146,7 +203,7 @@ declare module "enzyme" {
     /**
      * Find components by their `alt` value
      * @name findByAltText
-     * @param text text to match
+     * @param {string} text text to match
      * @example
      * const component = mount(
      *  <div>
@@ -161,7 +218,7 @@ declare module "enzyme" {
     /**
      * Find components by their `title` value
      * @name findByTitle
-     * @param title title to match
+     * @param {string} title title to match
      * @example
      * const component = mount(
      *  <div>
@@ -176,7 +233,7 @@ declare module "enzyme" {
     /**
      * Find components by their `role` value
      * @name findByRole
-     * @param role role to match
+     * @param {string} role role to match
      * @example
      * const component = mount(
      *  <div>
@@ -187,6 +244,62 @@ declare module "enzyme" {
      * component.findByRole('Close'); // returns <button role="Close">&times;</button>
      */
     findByRole<P, S, C>(role: string): ShallowWrapper<P, S, C>;
+
+    /**
+     * Debug components with an `alt` text
+     * @name debugByAltText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByAltText: DebugBy;
+
+    /**
+     * Debug components with an `alt` text
+     * @name debugByAltText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByAriaLabel: DebugBy;
+
+    /**
+     * Debug components by attribute (values)
+     * @name debugByAttribute
+     * @param {string} attribute
+     * @param {string} value
+     */
+    debugByAttribute: DebugBy;
+
+    /**
+     * Debug components with a `placeholder`
+     * @name debugByPlaceholderText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByPlaceholderText: DebugBy;
+
+    /**
+     * Debug components with a `role` attribute
+     * @name debugByRole
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByRole: DebugBy;
+
+    /**
+     * Debug components with a `data-testid` attribute
+     * @name debugByTestId
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByTestId: DebugBy;
+
+    /**
+     * Debug components with a `title` attribute
+     * @name debugByTitle
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByTitle: DebugBy;
   }
 }
 
