@@ -1,6 +1,7 @@
 import * as enzyme from "enzyme";
 
 type AddSelectors = () => void;
+type DebugBy = (query: string) => string;
 
 declare const addSelectors: AddSelectors;
 
@@ -9,164 +10,221 @@ declare module "enzyme" {
     /**
      * Find components by their `data-testid` value
      * @name findByTestId
-     * @param id id to match
+     * @param {string} id id to match
      * @example
      * const component = mount(
      *  <div>
      *   <div data-testid="foo">foo</div>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByTestId('foo'); // returns <div data-testid="foo">foo</div>
+     * component.findByTestId('foo');
      */
     findByTestId<P, S, C>(id: string): ReactWrapper<P, S, C>;
 
     /**
      * Find components by their `aria-label` value
      * @name findByAriaLabel
-     * @param label label to match
+     * @param {string} label label to match
      * @example
      * const component = mount(
      *  <div>
      *   <button aria-label="Close">&times;</button>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByAriaLabel('Close'); // returns <button aria-label="Close">&times;</button>
+     * component.findByAriaLabel('Close');
      */
     findByAriaLabel<P, S, C>(label: string): ReactWrapper<P, S, C>;
 
     /**
      * Find components by their `placeholder` value
      * @name findByPlaceholderText
-     * @param text text to match
+     * @param {string} text text to match
      * @example
      * const component = mount(
      *  <div>
      *   <input type="text" placeholder="Name" />
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByPlaceholderText('Name'); // returns <input type="text" placeholder="Name" />
+     * component.findByPlaceholderText('Name');
      */
     findByPlaceholderText<P, S, C>(text: string): ReactWrapper<P, S, C>;
 
     /**
      * Find components by their `alt` value
      * @name findByAltText
-     * @param text text to match
+     * @param {string} text text to match
      * @example
      * const component = mount(
      *  <div>
      *    <img alt="foo" />
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByAltText('foo'); // returns <img alt="foo" />
+     * component.findByAltText('foo');
      */
     findByAltText<P, S, C>(text: string): ReactWrapper<P, S, C>;
 
     /**
      * Find components by their `title` value
      * @name findByTitle
-     * @param title title to match
+     * @param {string} title title to match
      * @example
      * const component = mount(
      *  <div>
      *    <a href="https://..." title="foo">Go</a>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByTitle('foo'); // returns <a href="https://..." title="foo">Go</a>
+     * component.findByTitle('foo');
      */
     findByTitle<P, S, C>(title: string): ReactWrapper<P, S, C>;
 
     /**
      * Find components by their `role` value
      * @name findByRole
-     * @param role role to match
+     * @param {string} role role to match
      * @example
      * const component = mount(
      *  <div>
      *      <button role="Close">&times;</button>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByRole('Close'); // returns <button role="Close">&times;</button>
+     * component.findByRole('Close');
      */
     findByRole<P, S, C>(role: string): ReactWrapper<P, S, C>;
+
+    /**
+     * Debug components with an `alt` text
+     * @name debugByAltText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByAltText: DebugBy;
+
+    /**
+     * Debug components with an `alt` text
+     * @name debugByAltText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByAriaLabel: DebugBy;
+
+    /**
+     * Debug components by attribute (values)
+     * @name debugByAttribute
+     * @param {string} attribute
+     * @param {string} value
+     */
+    debugByAttribute: DebugBy;
+
+    /**
+     * Debug components with a `placeholder`
+     * @name debugByPlaceholderText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByPlaceholderText: DebugBy;
+
+    /**
+     * Debug components with a `role` attribute
+     * @name debugByRole
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByRole: DebugBy;
+
+    /**
+     * Debug components with a `data-testid` attribute
+     * @name debugByTestId
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByTestId: DebugBy;
+
+    /**
+     * Debug components with a `title` attribute
+     * @name debugByTitle
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByTitle: DebugBy;
   }
 
   interface ShallowWrapper {
     /**
      * Find components by their `data-testid` value
      * @name findByTestId
-     * @param id id to match
+     * @param {string} id id to match
      * @example
      * const component = mount(
      *  <div>
      *   <div data-testid="foo">foo</div>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByTestId('foo'); // returns <div data-testid="foo">foo</div>
+     * component.findByTestId('foo');
      */
+
     findByTestId<P, S, C>(id: string): ShallowWrapper<P, S, C>;
 
     /**
      * Find components by their `aria-label` value
      * @name findByAriaLabel
-     * @param label label to match
+     * @param {string} label label to match
      * @example
      * const component = mount(
      *  <div>
      *   <button aria-label="Close">&times;</button>
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByAriaLabel('Close'); // returns <button aria-label="Close">&times;</button>
+     * component.findByAriaLabel('Close');
      */
     findByAriaLabel<P, S, C>(label: string): ShallowWrapper<P, S, C>;
 
     /**
      * Find components by their `placeholder` value
      * @name findByPlaceholderText
-     * @param text text to match
+     * @param {string} text text to match
      * @example
      * const component = mount(
      *  <div>
      *   <input type="text" placeholder="Name" />
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByPlaceholderText('Name'); // returns <input type="text" placeholder="Name" />
+     * component.findByPlaceholderText('Name');
      */
     findByPlaceholderText<P, S, C>(text: string): ShallowWrapper<P, S, C>;
 
     /**
      * Find components by their `alt` value
      * @name findByAltText
-     * @param text text to match
+     * @param {string} text text to match
      * @example
      * const component = mount(
      *  <div>
      *    <img alt="foo" />
-     *  <div>
+     *  </div>
      * );
      *
-     * component.findByAltText('foo'); // returns <img alt="foo" />
+     * component.findByAltText('foo');
      */
     findByAltText<P, S, C>(text: string): ShallowWrapper<P, S, C>;
 
     /**
      * Find components by their `title` value
      * @name findByTitle
-     * @param title title to match
+     * @param {string} title title to match
      * @example
      * const component = mount(
      *  <div>
      *    <a href="https://..." title="foo">Go</a>
-     *  <div>
+     *  </div>
      * );
      *
      * component.findByTitle('foo'); // returns <a href="https://..." title="foo">Go</a>
@@ -176,17 +234,73 @@ declare module "enzyme" {
     /**
      * Find components by their `role` value
      * @name findByRole
-     * @param role role to match
+     * @param {string} role role to match
      * @example
      * const component = mount(
      *  <div>
      *      <button role="Close">&times;</button>
-     *  <div>
+     *  </div>
      * );
      *
      * component.findByRole('Close'); // returns <button role="Close">&times;</button>
      */
     findByRole<P, S, C>(role: string): ShallowWrapper<P, S, C>;
+
+    /**
+     * Debug components with an `alt` text
+     * @name debugByAltText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByAltText: DebugBy;
+
+    /**
+     * Debug components with an `alt` text
+     * @name debugByAltText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByAriaLabel: DebugBy;
+
+    /**
+     * Debug components by attribute (values)
+     * @name debugByAttribute
+     * @param {string} attribute
+     * @param {string} value
+     */
+    debugByAttribute: DebugBy;
+
+    /**
+     * Debug components with a `placeholder`
+     * @name debugByPlaceholderText
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByPlaceholderText: DebugBy;
+
+    /**
+     * Debug components with a `role` attribute
+     * @name debugByRole
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByRole: DebugBy;
+
+    /**
+     * Debug components with a `data-testid` attribute
+     * @name debugByTestId
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByTestId: DebugBy;
+
+    /**
+     * Debug components with a `title` attribute
+     * @name debugByTitle
+     * @param {string} query
+     * @returns {string}
+     */
+    debugByTitle: DebugBy;
   }
 }
 

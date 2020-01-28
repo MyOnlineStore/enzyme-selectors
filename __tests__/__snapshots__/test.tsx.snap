@@ -1,0 +1,685 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`util mount debugByAltText should generate a debug report for all occurences: mount:debugByAltText:all 1`] = `
+"
+
+[2m<div alt=\\"one\\">[22m
+[2m  <div alt=\\"two\\">[22m
+[2m    <div alt=\\"three\\">[22m
+[2m      <div alt=\\"four\\">[22m
+[2m        <div alt=\\"double\\" />[22m
+[2m        <div alt=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div alt=\\"two\\">[22m
+[2m  <div alt=\\"three\\">[22m
+[2m    <div alt=\\"four\\">[22m
+[2m      <div alt=\\"double\\" />[22m
+[2m      <div alt=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div alt=\\"three\\">[22m
+[2m  <div alt=\\"four\\">[22m
+[2m    <div alt=\\"double\\" />[22m
+[2m    <div alt=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div alt=\\"four\\">[22m
+[2m  <div alt=\\"double\\" />[22m
+[2m  <div alt=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div alt=\\"double\\" />[22m
+
+[2m<div alt=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util mount debugByAltText should generate a debug report for all occurences: mount:debugByAltText:single 1`] = `
+"
+
+[2m<div alt=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div alt=\\"three\\">[22m
+[2m    <div alt=\\"four\\">[22m
+[2m      <div alt=\\"double\\" />[22m
+[2m      <div alt=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
+
+exports[`util mount debugByAriaLabel should generate a debug report for all occurences: mount:debugByAriaLabel:all 1`] = `
+"
+
+[2m<div aria-label=\\"one\\">[22m
+[2m  <div aria-label=\\"two\\">[22m
+[2m    <div aria-label=\\"three\\">[22m
+[2m      <div aria-label=\\"four\\">[22m
+[2m        <div aria-label=\\"double\\" />[22m
+[2m        <div aria-label=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div aria-label=\\"two\\">[22m
+[2m  <div aria-label=\\"three\\">[22m
+[2m    <div aria-label=\\"four\\">[22m
+[2m      <div aria-label=\\"double\\" />[22m
+[2m      <div aria-label=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div aria-label=\\"three\\">[22m
+[2m  <div aria-label=\\"four\\">[22m
+[2m    <div aria-label=\\"double\\" />[22m
+[2m    <div aria-label=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div aria-label=\\"four\\">[22m
+[2m  <div aria-label=\\"double\\" />[22m
+[2m  <div aria-label=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div aria-label=\\"double\\" />[22m
+
+[2m<div aria-label=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util mount debugByAriaLabel should generate a debug report for all occurences: mount:debugByAriaLabel:single 1`] = `
+"
+
+[2m<div aria-label=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div aria-label=\\"three\\">[22m
+[2m    <div aria-label=\\"four\\">[22m
+[2m      <div aria-label=\\"double\\" />[22m
+[2m      <div aria-label=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
+
+exports[`util mount debugByPlaceholderText should generate a debug report for all occurences: mount:debugByPlaceholderText:all 1`] = `
+"
+
+[2m<div placeholder=\\"one\\">[22m
+[2m  <div placeholder=\\"two\\">[22m
+[2m    <div placeholder=\\"three\\">[22m
+[2m      <div placeholder=\\"four\\">[22m
+[2m        <div placeholder=\\"double\\" />[22m
+[2m        <div placeholder=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div placeholder=\\"two\\">[22m
+[2m  <div placeholder=\\"three\\">[22m
+[2m    <div placeholder=\\"four\\">[22m
+[2m      <div placeholder=\\"double\\" />[22m
+[2m      <div placeholder=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div placeholder=\\"three\\">[22m
+[2m  <div placeholder=\\"four\\">[22m
+[2m    <div placeholder=\\"double\\" />[22m
+[2m    <div placeholder=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div placeholder=\\"four\\">[22m
+[2m  <div placeholder=\\"double\\" />[22m
+[2m  <div placeholder=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div placeholder=\\"double\\" />[22m
+
+[2m<div placeholder=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util mount debugByPlaceholderText should generate a debug report for all occurences: mount:debugByPlaceholderText:single 1`] = `
+"
+
+[2m<div placeholder=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div placeholder=\\"three\\">[22m
+[2m    <div placeholder=\\"four\\">[22m
+[2m      <div placeholder=\\"double\\" />[22m
+[2m      <div placeholder=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
+
+exports[`util mount debugByRole should generate a debug report for all occurences: mount:debugByRole:all 1`] = `
+"
+
+[2m<div role=\\"one\\">[22m
+[2m  <div role=\\"two\\">[22m
+[2m    <div role=\\"three\\">[22m
+[2m      <div role=\\"four\\">[22m
+[2m        <div role=\\"double\\" />[22m
+[2m        <div role=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div role=\\"two\\">[22m
+[2m  <div role=\\"three\\">[22m
+[2m    <div role=\\"four\\">[22m
+[2m      <div role=\\"double\\" />[22m
+[2m      <div role=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div role=\\"three\\">[22m
+[2m  <div role=\\"four\\">[22m
+[2m    <div role=\\"double\\" />[22m
+[2m    <div role=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div role=\\"four\\">[22m
+[2m  <div role=\\"double\\" />[22m
+[2m  <div role=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div role=\\"double\\" />[22m
+
+[2m<div role=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util mount debugByRole should generate a debug report for all occurences: mount:debugByRole:single 1`] = `
+"
+
+[2m<div role=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div role=\\"three\\">[22m
+[2m    <div role=\\"four\\">[22m
+[2m      <div role=\\"double\\" />[22m
+[2m      <div role=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
+
+exports[`util mount debugByTestId should generate a debug report for all occurences: mount:debugByTestId:all 1`] = `
+"
+
+[2m<div data-testid=\\"one\\">[22m
+[2m  <div data-testid=\\"two\\">[22m
+[2m    <div data-testid=\\"three\\">[22m
+[2m      <div data-testid=\\"four\\">[22m
+[2m        <div data-testid=\\"double\\" />[22m
+[2m        <div data-testid=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div data-testid=\\"two\\">[22m
+[2m  <div data-testid=\\"three\\">[22m
+[2m    <div data-testid=\\"four\\">[22m
+[2m      <div data-testid=\\"double\\" />[22m
+[2m      <div data-testid=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div data-testid=\\"three\\">[22m
+[2m  <div data-testid=\\"four\\">[22m
+[2m    <div data-testid=\\"double\\" />[22m
+[2m    <div data-testid=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div data-testid=\\"four\\">[22m
+[2m  <div data-testid=\\"double\\" />[22m
+[2m  <div data-testid=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div data-testid=\\"double\\" />[22m
+
+[2m<div data-testid=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util mount debugByTestId should generate a debug report for all occurences: mount:debugByTestId:single 1`] = `
+"
+
+[2m<div data-testid=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div data-testid=\\"three\\">[22m
+[2m    <div data-testid=\\"four\\">[22m
+[2m      <div data-testid=\\"double\\" />[22m
+[2m      <div data-testid=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
+
+exports[`util mount debugByTitle should generate a debug report for all occurences: mount:debugByTitle:all 1`] = `
+"
+
+[2m<div title=\\"one\\">[22m
+[2m  <div title=\\"two\\">[22m
+[2m    <div title=\\"three\\">[22m
+[2m      <div title=\\"four\\">[22m
+[2m        <div title=\\"double\\" />[22m
+[2m        <div title=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div title=\\"two\\">[22m
+[2m  <div title=\\"three\\">[22m
+[2m    <div title=\\"four\\">[22m
+[2m      <div title=\\"double\\" />[22m
+[2m      <div title=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div title=\\"three\\">[22m
+[2m  <div title=\\"four\\">[22m
+[2m    <div title=\\"double\\" />[22m
+[2m    <div title=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div title=\\"four\\">[22m
+[2m  <div title=\\"double\\" />[22m
+[2m  <div title=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div title=\\"double\\" />[22m
+
+[2m<div title=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util mount debugByTitle should generate a debug report for all occurences: mount:debugByTitle:single 1`] = `
+"
+
+[2m<div title=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div title=\\"three\\">[22m
+[2m    <div title=\\"four\\">[22m
+[2m      <div title=\\"double\\" />[22m
+[2m      <div title=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
+
+exports[`util shallow debugByAltText should generate a debug report for all occurences: shallow:debugByAltText:all 1`] = `
+"
+
+[2m<div alt=\\"one\\">[22m
+[2m  <div alt=\\"two\\">[22m
+[2m    <div alt=\\"three\\">[22m
+[2m      <div alt=\\"four\\">[22m
+[2m        <div alt=\\"double\\" />[22m
+[2m        <div alt=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div alt=\\"two\\">[22m
+[2m  <div alt=\\"three\\">[22m
+[2m    <div alt=\\"four\\">[22m
+[2m      <div alt=\\"double\\" />[22m
+[2m      <div alt=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div alt=\\"three\\">[22m
+[2m  <div alt=\\"four\\">[22m
+[2m    <div alt=\\"double\\" />[22m
+[2m    <div alt=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div alt=\\"four\\">[22m
+[2m  <div alt=\\"double\\" />[22m
+[2m  <div alt=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div alt=\\"double\\" />[22m
+
+[2m<div alt=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util shallow debugByAltText should generate a debug report for all occurences: shallow:debugByAltText:single 1`] = `
+"
+
+[2m<div alt=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div alt=\\"three\\">[22m
+[2m    <div alt=\\"four\\">[22m
+[2m      <div alt=\\"double\\" />[22m
+[2m      <div alt=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
+
+exports[`util shallow debugByAriaLabel should generate a debug report for all occurences: shallow:debugByAriaLabel:all 1`] = `
+"
+
+[2m<div aria-label=\\"one\\">[22m
+[2m  <div aria-label=\\"two\\">[22m
+[2m    <div aria-label=\\"three\\">[22m
+[2m      <div aria-label=\\"four\\">[22m
+[2m        <div aria-label=\\"double\\" />[22m
+[2m        <div aria-label=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div aria-label=\\"two\\">[22m
+[2m  <div aria-label=\\"three\\">[22m
+[2m    <div aria-label=\\"four\\">[22m
+[2m      <div aria-label=\\"double\\" />[22m
+[2m      <div aria-label=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div aria-label=\\"three\\">[22m
+[2m  <div aria-label=\\"four\\">[22m
+[2m    <div aria-label=\\"double\\" />[22m
+[2m    <div aria-label=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div aria-label=\\"four\\">[22m
+[2m  <div aria-label=\\"double\\" />[22m
+[2m  <div aria-label=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div aria-label=\\"double\\" />[22m
+
+[2m<div aria-label=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util shallow debugByAriaLabel should generate a debug report for all occurences: shallow:debugByAriaLabel:single 1`] = `
+"
+
+[2m<div aria-label=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div aria-label=\\"three\\">[22m
+[2m    <div aria-label=\\"four\\">[22m
+[2m      <div aria-label=\\"double\\" />[22m
+[2m      <div aria-label=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
+
+exports[`util shallow debugByPlaceholderText should generate a debug report for all occurences: shallow:debugByPlaceholderText:all 1`] = `
+"
+
+[2m<div placeholder=\\"one\\">[22m
+[2m  <div placeholder=\\"two\\">[22m
+[2m    <div placeholder=\\"three\\">[22m
+[2m      <div placeholder=\\"four\\">[22m
+[2m        <div placeholder=\\"double\\" />[22m
+[2m        <div placeholder=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div placeholder=\\"two\\">[22m
+[2m  <div placeholder=\\"three\\">[22m
+[2m    <div placeholder=\\"four\\">[22m
+[2m      <div placeholder=\\"double\\" />[22m
+[2m      <div placeholder=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div placeholder=\\"three\\">[22m
+[2m  <div placeholder=\\"four\\">[22m
+[2m    <div placeholder=\\"double\\" />[22m
+[2m    <div placeholder=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div placeholder=\\"four\\">[22m
+[2m  <div placeholder=\\"double\\" />[22m
+[2m  <div placeholder=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div placeholder=\\"double\\" />[22m
+
+[2m<div placeholder=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util shallow debugByPlaceholderText should generate a debug report for all occurences: shallow:debugByPlaceholderText:single 1`] = `
+"
+
+[2m<div placeholder=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div placeholder=\\"three\\">[22m
+[2m    <div placeholder=\\"four\\">[22m
+[2m      <div placeholder=\\"double\\" />[22m
+[2m      <div placeholder=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
+
+exports[`util shallow debugByRole should generate a debug report for all occurences: shallow:debugByRole:all 1`] = `
+"
+
+[2m<div role=\\"one\\">[22m
+[2m  <div role=\\"two\\">[22m
+[2m    <div role=\\"three\\">[22m
+[2m      <div role=\\"four\\">[22m
+[2m        <div role=\\"double\\" />[22m
+[2m        <div role=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div role=\\"two\\">[22m
+[2m  <div role=\\"three\\">[22m
+[2m    <div role=\\"four\\">[22m
+[2m      <div role=\\"double\\" />[22m
+[2m      <div role=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div role=\\"three\\">[22m
+[2m  <div role=\\"four\\">[22m
+[2m    <div role=\\"double\\" />[22m
+[2m    <div role=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div role=\\"four\\">[22m
+[2m  <div role=\\"double\\" />[22m
+[2m  <div role=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div role=\\"double\\" />[22m
+
+[2m<div role=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util shallow debugByRole should generate a debug report for all occurences: shallow:debugByRole:single 1`] = `
+"
+
+[2m<div role=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div role=\\"three\\">[22m
+[2m    <div role=\\"four\\">[22m
+[2m      <div role=\\"double\\" />[22m
+[2m      <div role=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
+
+exports[`util shallow debugByTestId should generate a debug report for all occurences: shallow:debugByTestId:all 1`] = `
+"
+
+[2m<div data-testid=\\"one\\">[22m
+[2m  <div data-testid=\\"two\\">[22m
+[2m    <div data-testid=\\"three\\">[22m
+[2m      <div data-testid=\\"four\\">[22m
+[2m        <div data-testid=\\"double\\" />[22m
+[2m        <div data-testid=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div data-testid=\\"two\\">[22m
+[2m  <div data-testid=\\"three\\">[22m
+[2m    <div data-testid=\\"four\\">[22m
+[2m      <div data-testid=\\"double\\" />[22m
+[2m      <div data-testid=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div data-testid=\\"three\\">[22m
+[2m  <div data-testid=\\"four\\">[22m
+[2m    <div data-testid=\\"double\\" />[22m
+[2m    <div data-testid=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div data-testid=\\"four\\">[22m
+[2m  <div data-testid=\\"double\\" />[22m
+[2m  <div data-testid=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div data-testid=\\"double\\" />[22m
+
+[2m<div data-testid=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util shallow debugByTestId should generate a debug report for all occurences: shallow:debugByTestId:single 1`] = `
+"
+
+[2m<div data-testid=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div data-testid=\\"three\\">[22m
+[2m    <div data-testid=\\"four\\">[22m
+[2m      <div data-testid=\\"double\\" />[22m
+[2m      <div data-testid=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
+
+exports[`util shallow debugByTitle should generate a debug report for all occurences: shallow:debugByTitle:all 1`] = `
+"
+
+[2m<div title=\\"one\\">[22m
+[2m  <div title=\\"two\\">[22m
+[2m    <div title=\\"three\\">[22m
+[2m      <div title=\\"four\\">[22m
+[2m        <div title=\\"double\\" />[22m
+[2m        <div title=\\"double\\" />[22m
+[2m      </div>[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div title=\\"two\\">[22m
+[2m  <div title=\\"three\\">[22m
+[2m    <div title=\\"four\\">[22m
+[2m      <div title=\\"double\\" />[22m
+[2m      <div title=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div title=\\"three\\">[22m
+[2m  <div title=\\"four\\">[22m
+[2m    <div title=\\"double\\" />[22m
+[2m    <div title=\\"double\\" />[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+[2m<div title=\\"four\\">[22m
+[2m  <div title=\\"double\\" />[22m
+[2m  <div title=\\"double\\" />[22m
+[2m</div>[22m
+
+[2m<div title=\\"double\\" />[22m
+
+[2m<div title=\\"double\\" />[22m
+
+"
+`;
+
+exports[`util shallow debugByTitle should generate a debug report for all occurences: shallow:debugByTitle:single 1`] = `
+"
+
+[2m<div title=\\"[22m[32m[1mtwo[22m[39m[2m\\">[22m
+[2m  <div title=\\"three\\">[22m
+[2m    <div title=\\"four\\">[22m
+[2m      <div title=\\"double\\" />[22m
+[2m      <div title=\\"double\\" />[22m
+[2m    </div>[22m
+[2m  </div>[22m
+[2m</div>[22m
+
+"
+`;
