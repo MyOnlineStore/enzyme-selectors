@@ -8,7 +8,9 @@
     "src"
   ],
   "types": "src/index.d.ts",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^3.0.0"
+  },
   "peerDependencies": {
     "enzyme": ">=2.0.0"
   },
@@ -28,7 +30,7 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "test": "jest --setupTestFrameworkScriptFile='./jest.setup.js'",
+    "test": "FORCE_COLOR=true jest --setupTestFrameworkScriptFile='./jest.setup.js'",
     "check-types": "tsc"
   }
 }
