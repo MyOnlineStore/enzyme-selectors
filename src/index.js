@@ -11,7 +11,7 @@ function addSelectors() {
   }
 
   function findByPlaceholderText(text) {
-    return this.find(`[aria-label="${text}"]`);
+    return this.find(`[placeholder="${text}"]`);
   }
 
   function findByAltText(text) {
