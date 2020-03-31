@@ -21,13 +21,13 @@ After installation, you should configure the selectors. If you already have enzy
 ```diff
    const Enzyme = require("enzyme");
    const Adapter = require("enzyme-adapter-react-16");
-+  const { configure } = require("enzyme-selectors");
++  const { addSelectors } = require("enzyme-selectors");
 
    Enzyme.configure({
      adapter: new Adapter()
    });
 
-+  configure();
++  addSelectors();
 ```
 
 ### Typescript
